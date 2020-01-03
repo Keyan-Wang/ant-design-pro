@@ -43,7 +43,8 @@ const Model: LoginModelType = {
       // Login successfully
       if (response.status === 'ok') {
         const urlParams = new URL(window.location.href);
-        const params = getPageQuery();
+        // const params = getPageQuery();
+        const params = {redirect: "http://localhost:8000/welcome"};
         let { redirect } = params as { redirect: string };
         if (redirect) {
           const redirectUrlParams = new URL(redirect);
