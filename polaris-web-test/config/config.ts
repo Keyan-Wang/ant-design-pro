@@ -118,6 +118,12 @@ export default {
               component: './AccountCenter',
             },
             {
+              name: '基础表单',
+              icon: 'smile',
+              path: '/formbasicform',
+              component: './FormBasicForm',
+            },
+            {
               component: './404',
             },
           ],
